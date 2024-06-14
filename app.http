@@ -1,0 +1,52 @@
+GET http://localhost:3000/Categories
+
+#######
+
+
+POST http://localhost:3000/Products
+Content-Type: application/json
+
+{
+    "ProductName": "Blue Vans",
+    "ProductPrice":3000,
+    "CategoryID":"b419b23c-1f43-4b37-9c09-ff13cbf6a673"
+}
+
+######
+
+
+
+
+GET http://localhost:3000/Products/search
+Content-Type: application/json
+
+{
+    "ProductName": "nike air"
+}
+
+#########
+GET http://localhost:3000/Products/filter
+Content-Type: application/json
+
+{
+    "MinPrice": 1000,
+    "MaxPrice": 50000,
+    "ProductName": "samsung A51"
+
+
+}
+
+#########
+GET http://localhost:3000/Products/GetProductsInRange
+Content-Type: application/json
+
+{
+    "StartRow": 1,
+    "EndRow": 2
+
+}
+
+#########
+
+
+
